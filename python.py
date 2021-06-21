@@ -8,7 +8,7 @@ class Course:
 
         }
 
-        for key, value in kwargs.items:
+        for key, value in kwargs.items():
             self.course[key] = [value]
 
     def courses(self):
@@ -27,9 +27,17 @@ class Student(Course):
     def studentDetails(self):
 
         print("Hello there!! My name is " +
-              self.lname + " " + self.fname + "./n")
+              self.lname + " " + self.fname + ".")
         print("My student id is " + self.adminNo + ". :)")
 
     def courseDetails(self):
         print("Hello there, I am enrolled in the following courses: " +
               super().courses())
+
+
+Mensah = Student("Ebenezer", "MEns", "234",
+                 CSCD31="Intro CompScience", CSCD21="Data Structures and Algo")
+
+Mensah.studentDetails()
+
+Mensah.courseDetails()
