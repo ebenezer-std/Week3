@@ -31,8 +31,8 @@ class Student(Course):
         print("My student id is " + self.adminNo + ". :)")
 
     def courseDetails(self):
-        print("Hello there, I am enrolled in the following courses: " +
-              super().courses())
+        print("Hello there, I am enrolled in the following courses: ")
+        super().courses()
 
 
 Mensah = Student("Ebenezer", "MEns", "234",
@@ -41,3 +41,10 @@ Mensah = Student("Ebenezer", "MEns", "234",
 Mensah.studentDetails()
 
 Mensah.courseDetails()
+
+Vincent = Student("Vincent", "Tetteh", "11234",
+                  CSCD3="Intro CompScience II", CSCD2100="Data Structures and Algo2")
+
+Vincent.studentDetails()
+
+Vincent.courseDetails()
